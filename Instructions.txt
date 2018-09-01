@@ -1,0 +1,11 @@
+A simple laravel project to write blog about any Youtube video's in Bangla
+
+First copy 'YoutubeBlog' folder in your hard drive.
+Load 'youtubeBlog.sql' in Xampp database.
+Open CMD.
+Add the path of the folder in cmd : cd /d D:/routine
+Write this command : php artisan serve
+Open the link in browser.
+All the sections except 'আধুনিক বিজ্ঞান ' are empty
+You can write blog via login. Username : aaa@gmail.com pass : aaaaaa.
+Basic Laravel Project. Try to learn. 
