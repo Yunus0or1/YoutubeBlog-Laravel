@@ -28,7 +28,7 @@ class HomeController extends Controller
     {
 		$user = Auth::user();
 		
-        return view('writeBlog')->with('user',$user);
+        return view('writeBlog')->with('user',$user)->with('message','');
     }
 	
 	

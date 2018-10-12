@@ -105,12 +105,6 @@
 	</br>
 	<h12 style="font-size:30px;padding:20px;text-decoration:underline">আপনার প্রকাশিত লেখাসমুহ : </h12>
 	
-	<h12 style="font-size:30px;padding:20px;text-decoration:underline;float:right;margin-top:-80px;">প্রোফাইল পিক :</h12>
-	
-	<img src="{{ asset($image[0]->avatar) }}" style="width:300px;height:300px;;padding:10px; float:right";>
-		
-		</br>
-		</br>
 	
 	</br>
 	</br>

@@ -101,8 +101,17 @@
 		
 		
 		
+				
+		
+		
+
 		
 		<h1 style="margin-left:80px;">এখানে ব্লগ লিখুন </h1>
+		
+		@if($errors->any())
+			</br>
+			<h4 style= "margin-left:20px">{{$errors->first()}}</h4>
+		@endif
 		
 		{{ Form::open(['route' => 'gpa.science', 'files' => true]) }}
 		

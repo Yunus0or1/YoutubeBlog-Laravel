@@ -7,7 +7,8 @@
 
 
 <body>
-<a href="{{url('/')}}" style="margin-left:500px;font-size:50px;color:Green"> নিড়ে ফিরুন </a><h1>
+<a href="{{url('/')}}" style="margin-left:500px;font-size:50px;color:Green"> নিড়ে ফিরুন.আপনার লেখা পাবেন এই অংশে
+ {{$sub}} </a><h1>
         </div>
     </div>
 </div>

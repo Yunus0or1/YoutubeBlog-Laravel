@@ -93,11 +93,12 @@
 		
 
 		
-		
+		<h1 style ="font-size : 15px"> Our Writers </h1> 
 		
 		@foreach($profile as $info)
-		<img src="{{ asset($info->avatar) }}" style="width:100px;height:100px;;padding:10px";>
-		<a href="{{ url('profile/'.$info->email.'/'.$info->name) }}">{{$info->name}}</a>
+		<a href="{{ url('profile/'.$info->email.'/'.$info->name) }}" 
+		style="margin-left : 20px; margin-top : 30px"
+		>{{$info->name}},{{$info->job}}</a>
 		</br>
 		</br>
 		

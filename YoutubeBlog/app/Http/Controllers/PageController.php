@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Redirect;
 use DB;
 use App\Quotation;
 use Input;
@@ -10,6 +11,7 @@ use App\Filename;
 use Storage;
 use Illuminate\Support\Facades\File;
 use Illuminate\Http\UploadedFile;
+
 
 class PageController extends Controller
 {
@@ -63,6 +65,7 @@ class PageController extends Controller
 	}
 	
 	public function blog(){
+		
 		return view('writeBlog');
 		
 	}
@@ -95,28 +98,33 @@ class PageController extends Controller
         %x'
         ;
     $result = preg_match($pattern, $url, $matches);
-    if (false !== $result) {
+    
+	if (false !== $result) {
         return $matches[1];
     }
+	
     return false;
 }
+
+
 	
 	public function blogafter(Request $request){
 		
 		
 		if($request->hasFile('filea'))
         {
-			 
-            
+			     
 			$filepath = $request->filea->getClientOriginalName();
 			
 			$request->filea->storeAs('public/upload',$filepath);
-			
-			
 				
 			
-			
         }
+		
+		else {
+			
+			$filepath = '';
+		}
 		
 		$sub = Input::get('sub') ;
 		$details = Input::get('details') ;
@@ -126,7 +134,15 @@ class PageController extends Controller
 		parse_str( parse_url( $videokey, PHP_URL_QUERY ), $my_array_of_vars );
 		
 		
-		$mainkey = $my_array_of_vars['v'];
+		$mainkey = $my_array_of_vars;
+		
+		if ($mainkey == [])
+		{
+			return \Redirect::back()->withInput(Input::all())->withErrors(['Insert Youtube URL properly.Get URL from top of your browser URL box']);
+			
+		}
+		
+		else $mainkey = $my_array_of_vars['v'];
 		
 		$job = DB::table('users')
 		  
@@ -160,7 +176,7 @@ class PageController extends Controller
         	);	
 		
   		
-		return view('blogafter');
+		return view('blogafter')->with('sub',$sub);
 		
 	}
 	

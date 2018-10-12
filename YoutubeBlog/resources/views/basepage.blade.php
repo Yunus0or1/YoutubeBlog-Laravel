@@ -132,7 +132,7 @@
 		
 		<div id="title">
 		
-		<h3>{{$channel[0]->heading}}</h3>  
+ 
 		
 		</div>
 		
@@ -176,34 +176,7 @@
 	</br>
 	</br>
 	
-	<div id="channel">
-	
-	
-	<h3 style="font-size: 30px;margin: 12px;text-decoration:underline ;">কিছু  ইউটিউব চ্যানেল&nbsp:</h3>
-	
-	
-	
-	<h33 style="font-size:20px; margin-left:20px">
-	<a href="{{$channel[0]->channel_1_link}}">{{$channel[0]->channel_1_name}}</a></h33>
-	</br>
-	</br>
-	
-	<h33 style="font-size:20px; margin-left:20px">
-	<a href="{{$channel[0]->channel_2_link}}">{{$channel[0]->channel_2_name}}</a></h33>
-	</br>
-	</br>
-	
-	<h33 style="font-size:20px; margin-left:20px">
-	<a href="{{$channel[0]->channel_3_link}}">{{$channel[0]->channel_3_name}}</a></h33>
-	</br>
-	</br>
-	
-	<h33 style="font-size:20px; margin-left:20px">
-	<a href="{{$channel[0]->channel_4_link}}">{{$channel[0]->channel_4_name}}</a></h33>
-	</br>
-	</br>
-	
-	</div>
+
 	
 	</br>
 	</br>

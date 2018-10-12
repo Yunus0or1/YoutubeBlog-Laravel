@@ -60,6 +60,18 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
+						
+
+						
+                        <div class="form-group">
+                            <label for="job" class="col-md-4 control-label">Job</label>
+
+                            <div class="col-md-6">
+                                <input id="job" type="text" class="form-control" name="job" required>
+                            </div>
+                        </div>
+						
+						
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
