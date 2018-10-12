@@ -5,7 +5,7 @@ You will not able to run this project before installing composer and other depen
 Go to this repository link :  https://github.com/Yunus0or1/Guidelines-How_TO and read 'How to install Laravel' to install all the necessery dependencies.
 Load 'youtubeblog.sql' in Xampp database.
 Open CMD.
-Add the path of the folder in cmd like : cd /d D:/routine
+Add the path of the folder in cmd like : cd /d D:/YoutubeBlog
 Write this command : php artisan serve
 Open the link in browser.
 You can write blog after registration.
