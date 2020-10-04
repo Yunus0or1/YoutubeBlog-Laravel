@@ -1,5 +1,5 @@
 # YoutubeBlog-Laravel
-A simple laravel project to write blog about any Youtube video's in Bangla.
+A simple laravel project to write blog about any Youtube video's in Bangla add that URL with the blog.
 
 # Installation & Run
 
